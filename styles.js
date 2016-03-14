@@ -21,8 +21,8 @@ $(function() {
 		},500);
 	});
 	$("#about").click(function(){
-		$.ajax({url: "http://nikhilpodila.github.io/demo1.txt", success: function(result){
-			$(this).html(result);
+		$.ajax({url: "demo1.txt", success: function(result){
+			$("#about").html(result);
 		}});
 		$(this).animate({
 			backgroundColor: '#ff0000'
