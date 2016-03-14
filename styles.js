@@ -32,6 +32,7 @@ $(function() {
 	// END OF INTRO PAGE DISPLAY
 	// ABOUT PAGE DISPLAY
 	$("#about").click(function(){
+<<<<<<< HEAD
 		$.ajax({url: "about.txt", success: function(result){
 			$("#content").html(result);
 		}});
@@ -54,6 +55,10 @@ $(function() {
 	$("#skill").click(function(){
 		$.ajax({url: "skill.txt", success: function(result){
 			$("#content").html(result);
+=======
+		$.ajax({url: "demo1.txt", success: function(result){
+			$("#about").html(result);
+>>>>>>> origin/master
 		}});
 		$(this).animate({
 			backgroundColor: '#ff0000'
