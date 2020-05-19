@@ -1,0 +1,166 @@
+body {
+  background-color: #fff;
+  font-family: Cambria;
+  margin: 5px 0px;
+  color: rgb(38,38,38)
+}
+
+.headerElements {
+  display: inline-block;
+  vertical-align: middle;
+
+  height: 100%;
+}
+
+.mainElements {
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+  vertical-align: top;
+}
+
+
+#break.mainElements {
+  width:20px;
+  padding:0px;
+  background-color: transparent;
+}
+
+#heading1 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#break.headerElements {
+  width: 3px;
+  background-image: linear-gradient(to right, #fff, #ddd, #bbb, #333, #bbb, #ddd, #fff);
+  background-position: 0px 0px 0px 0px;
+  padding: 0px 2px;
+  margin: 0px 10px;
+}
+
+#name {
+  font-size: 48px;
+}
+
+img#linkedin {
+  vertical-align: middle;
+  height: 35px;
+}
+
+
+#break2.headerElements {
+  width: 5px;
+}
+
+#headerSys {
+  width: 100%;
+  height: 57px;
+  text-align: center;
+}
+
+#horiz {
+  margin-top: 10px;
+  width: 100%;
+  height: 10px;
+  background-image: linear-gradient(#aaa, #eee, #fff);
+}
+
+div.textAbout{
+  float: none;
+  text-align: left;
+}
+
+#imgAbout {
+  float: left;
+  height: 100px;
+  border: 4px solid #262626;
+  margin-right: 10px;
+}
+
+#break.leftElements {
+  width: 100%;
+  clear: both;
+  height: 5px;
+  background-color: none;
+  margin-top: 5px;
+}
+
+a {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f00;
+}
+
+#linkimg {
+  opacity: 0;
+  height: 14px;
+  transition: opacity 0.3s;
+  margin-left:2px;
+}
+
+/*a:hover #linkimg {
+  display: inline-block;
+  height: 14px;
+}*/
+
+#profile-entity {
+  transition: 0.3s;
+  margin: 0px 0px;
+  padding: 3px;
+}
+
+ul {
+  list-style-position: inside;
+  margin: 0px;
+  list-style-type: square;
+  padding: 0px 0px 0px 10px;
+}
+
+ul.cite {
+  list-style-position: outside;
+  padding: 0px 0px 0px 25px;
+}
+
+#profile-entity:hover {
+  background-image: linear-gradient(to right, #fff 0%, #e7e7e7 1% 2%, #fff 25%);
+}
+
+#profile-entity:hover #linkimg {
+  opacity: 1;
+}
+
+#break.middleElements {
+  height: 10px;
+  margin: 0px 0px;
+}
+
+#profile-entity.rightCiteElements {
+  font-size: 16px;
+  color: #262626;
+  text-decoration: underline;
+}
+
+span.highlighter {
+  white-space: nowrap;
+}
+
+@keyframes slideOut {
+  0% {
+    max-width:0%;
+  }
+  100% {
+    max-width:10%;
+  }
+}
+#animatedTitle {
+  overflow: hidden;
+  animation-name: slideOut;
+  animation-duration: 2s;
+  max-width:10%;
+  font-size: 48px;
+}
+#animatedName {
+  font-size: 48px;
+}

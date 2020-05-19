@@ -1,0 +1,19 @@
+@keyframes slideOutRead {
+  0% {
+    max-width:0%;
+  }
+  100% {
+    max-width:18%;
+  }
+}
+#animatedReadTitle {
+  overflow: hidden;
+  animation-name: slideOutRead;
+  animation-duration: 2s;
+  max-width:18%;
+  font-size: 48px;
+}
+
+#mainSys {
+  padding: 10px;
+}

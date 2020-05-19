@@ -1,99 +1,233 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Nikhil Podila</title>
+    <link rel="stylesheet" type="text/css" href = "mainstyles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <!--script>
+  $(document).ready(function(){
+    $("profile-entity").click()
+  });
+</script--->
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
-<head>
-     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-     <title>Nikhil Podila - Resume</title>
-
-     <style type="text/css">
-        * { margin: 0; padding: 0; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
-        .clear { clear: both; }
-        #page-wrap { width: 900px; margin: 40px auto 60px; }
-        #pic { float: right; margin: 0 0 0 0; height: 230px; border: 3px solid #999;}
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
-        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-        p { margin: 0 0 16px 0; }
-        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
-        a:hover { border-bottom-style: solid; color: black; }
-        ul { margin: 0 0 32px 17px; }
-        #objective { width: 600px; float: left; }
-        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 80px; float: left; height: 50px; border-right: 1px solid #999;  }
-        dd { width: 700px; float: right; }
-        dd.clear { float: none; margin: 0; height: 10px; }
-     </style>
-</head>
-
-<body>
-
-    <div id="page-wrap">
-    
-        <img src="images/dp7_edit.jpg" alt="Photo" id="pic" />
-    
-        <div id="contact-info" class="vcard">
-        
-            <!-- Microformats! -->
-        
-            <h1 class="fn">Nikhil Podila</h1>
-        
-            <p>
-                LinkedIn: <a href="https://www.linkedin.com/in/nikhil-podila/">https://www.linkedin.com/in/nikhil-podila/</a>
-            </p>
-        </div>
-                
-        <div id="objective">
-            <p>
-                I am a Masters student with academic research and two years of industrial experience in the domains of Machine Learning and Reinforcement Learning. 
-            </p>
-        </div>
-        
-        <div class="clear"></div>
-        
-        <dl>
-            <dd class="clear"></dd>
-            
-            <dt>Current Education</dt>
-            <dd>
-                <h2>McGill University, Montreal, Canada</h2>
-                <p>September 2019 - Present<br />
-				<strong>Degree:</strong> M.Sc. in Electrical Engineering<br />
-				<strong>Courses: </strong>Applied Machine Learning, Reinforcement Learning, Optimization and Optimal Control, Probability and Random Signals 2, Mathematical Foundations of Systems</p>
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-			<dt>Resume</dt>
-            <dd>
-                <h3><a href = "./resume.pdf">Link to resume</a></h3>
-            </dd>
-			
-			<dd class="clear"></dd>
-            
-            <dt>Projects</dt>
-            <dd>
-                <h4><ul><li><a href="https://github.com/nikhilpodila/Reinforcement-Learning-Inverted-Pendulum">Undergraduate Thesis: Reinforcement Learning applied to Inverted Pendulum</a>
-                <li><a href="https://github.com/nikhilpodila/Classification-UCI-Datasets">Classification on Standard UC Irvine Datasets</a>
-				<li><a href="https://github.com/nikhilpodila/Reddit-Classification">Text classification on Reddit comments</a>
-				<li><a href="https://github.com/nikhilpodila/Modified-MNIST">Image classification on Modified MNIST dataset</a>
-				<li><a href="https://github.com/nikhilpodila/GAN-MNIST-CIFAR">Generative Adversarial Networks</a></ul></h4>
-            </dd>
-            
-            <dd class="clear"></dd>
-			<dt>Email</dt>
-			<dd>
-				nikhil.podila@mail.mcgill.ca
-			</dd>
-        </dl>
-        
-        <div class="clear"></div>
-    
+  </head>
+  <body>
+    <div id="headerSys">
+      <div id="name" class="headerElements">Nikhil Podila</div>
+      <div id="break" class = "headerElements"></div>
+      <a href="https://www.linkedin.com/in/nikhil-podila/"><img src="lin.png" id="linkedin" class="headerElements"/></a>
+      <div id="break2" class="headerElements"></div>
+      <a href="https://github.com/nikhilpodila"><img src="github.png" id="linkedin" class="headerElements"/></a>
     </div>
+    <div id="horiz"></div>
 
-</body>
+    <div id="mainSys">
+      <div id="left" class="mainElements">
 
+        <div>
+        <img src="dp.jpg" id="imgAbout" />
+        <span><div class="textAbout">
+        I am a Masters student with academic research and two years of industrial experience in the domains of Machine Learning and Reinforcement Learning.
+        </div></span>
+        </div>
+
+        <div id="break" class="leftElements"></div>
+
+        <div id="heading1" class="leftElements">Current</div>
+        <div class="leftElements">
+          <b>Master of Science (Thesis)</b>, <br />
+          Electrical and Computer Engineering <br />
+          McGill University, Montreal Canada
+        </div>
+
+        <div id="break" class="leftElements"></div>
+
+        <div id="heading1" class="leftElements">Past</div>
+        <div class="leftElements">
+          <b>Data Scientist/ Associate R&D Engineer</b>, <br />
+          Robotics & Motion - Drives, <br />
+          ABB GISPL, Bangalore India
+        </div>
+
+        <div id="break" class="leftElements"></div>
+
+        <div class="leftElements">
+          <b>Bachelor of Engineering </b>, <br />
+          Electrical Engineering, <br />
+          PES Institute of Technology, Bangalore India
+        </div>
+
+        <div id="break" class="leftElements"></div>
+
+        <a href="Resume.pdf">
+          <div class="rightElements" id="profile-entity">
+            <div id="heading1" class="leftElements">
+              View my <u>Resume</u>&nbsp;<img id="linkimg" src="link-26.png" />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div id="break" class="mainElements"></div>
+      <div id="middle" class="mainElements">
+
+        <div id="heading1" class="middleElements">Reinforcement Learning</div>
+        <a href="https://github.com/nikhilpodila/Reinforcement-Learning-Inverted-Pendulum">
+          <div class="middleElements" id="profile-entity">
+            <u>Undergraduate Thesis</u>&nbsp;<img id="linkimg" src="link-26.png" /><br />
+
+            <ul>
+              <li>Hybrid control of Inverted pendulum (Cart pole) - Swing up (Energy method) and Stabilization.</li>
+              <li>Stabilization methods - Tabular and Linear function approximation with Q-learning, SARSA and Actor-Critic</li>
+              <li>Results are compared to LQR stabilization.</li>
+            </ul>
+          </div>
+        </a>
+
+        <a href="https://github.com/AlexHoffman9/767-final-IR">
+          <div class="middleElements" id="profile-entity">
+            <u>Review of Importance Resampling for Off-Policy Prediction</u>&nbsp;<img id="linkimg" src="link-26.png" /><br />
+
+            <ul>
+              <li>Reproduced the NeurIPS 2019 paper on Importance Resampling (IR) for Off-Policy Prediction</li>
+              <li>Compared results with Importance Sampling (IS), WIS and Prioritized Experience Replay</li>
+            </ul>
+          </div>
+        </a>
+        <div id="break" class="middleElements"></div>
+        <div id="heading1" class="middleElements">Machine Learning</div>
+        <a href="https://github.com/nikhilpodila/Classification-UCI-Datasets">
+          <div class="middleElements" id="profile-entity">
+            <u>Linear Classification</u>&nbsp;<img id="linkimg" src="link-26.png" /><br />
+
+            <ul>
+              <li>Logistic Regression and Linear Discriminant Analysis on UC Irvine datasets - (1) Breast Cancer and (2) Wine Quality</li>
+            </ul>
+          </div>
+        </a>
+
+        <a href="https://github.com/nikhilpodila/Reddit-Classification">
+          <div class="middleElements" id="profile-entity">
+            <u>Text Classification</u>&nbsp;<img id="linkimg" src="link-26.png" /><br />
+
+            <ul>
+              <li>NLP feature engineering and Ensemble Naive Bayes classifiers on Reddit comment classification dataset</li>
+            </ul>
+          </div>
+        </a>
+
+        <a href="https://github.com/nikhilpodila/Modified-MNIST">
+          <div class="middleElements" id="profile-entity">
+            <u>Image Classification</u>&nbsp;<img id="linkimg" src="link-26.png" /><br />
+
+            <ul>
+              <li>Analysis of Convolutional Neural Networks applied on Modified MNIST dataset</li>
+            </ul>
+          </div>
+        </a>
+
+        <a href="https://github.com/nikhilpodila/Modified-MNIST">
+          <div class="middleElements" id="profile-entity">
+            <u>Generative Adversarial Networks (GANs)</u>&nbsp;<img id="linkimg" src="link-26.png" /><br />
+
+            <ul>
+              <li>Survey of various GANs applied on standard datasets - MNIST, FMNIST and CIFAR-10</li>
+            </ul>
+          </div>
+        </a>
+
+      </div>
+      <div id="break" class="mainElements"></div>
+      <div id="right" class="mainElements">
+
+        <div id="heading1" class="middleElements">Publications and Patents</div>
+        <ul class="cite">
+
+            <a href="https://arxiv.org/abs/1810.01940">
+              <div class="rightCiteElements" id="profile-entity">
+                <li>
+                  Comparison of reinforcement learning algorithms applied to the cart-pole
+                  <span class="highlighter">problem <img id="linkimg" src="link-26.png" /></span>
+                  <br />
+                </li>
+              </div>
+            </a>
+
+            <a href="https://patents.google.com/patent/US20200073361A1/en">
+              <div class="rightCiteElements" id="profile-entity">
+                <li>
+                  Method and system for monitoring condition of electric
+                  <span class="highlighter">drives <img id="linkimg" src="link-26.png" /></span>
+                  <br />
+                </li>
+              </div>
+            </a>
+
+            <a href="https://patents.google.com/patent/US20200132773A1/en/">
+              <div class="rightCiteElements" id="profile-entity">
+                <li>
+                  Anomaly detection system and method for electric
+                  <span class="highlighter">drives <img id="linkimg" src="link-26.png" /></span>
+                  <br />
+                </li>
+              </div>
+            </a>
+
+            <a href="starsensor.pdf">
+              <div class="rightCiteElements" id="profile-entity">
+                <li>
+                  Star Sensor Design: Interface Circuit and VHDL Implementation on
+                  <span class="highlighter">FPGA <img id="linkimg" src="link-26.png" /></span>
+                  <br />
+                </li>
+              </div>
+            </a>
+        </ul>
+        <div id="break" class="middleElements"></div>
+
+        <div id="heading1" class="middleElements">Hobbies and Interests</div>
+        <ul>
+          <a href="music.html">
+            <div class="rightElements" id="profile-entity">
+              <li>
+                <u>Music - Keyboard</u> <img id="linkimg" src="link-26.png" /><br />
+              </li>
+            </div>
+          </a>
+
+          <a href="space.html">
+            <div class="rightElements" id="profile-entity">
+              <li>
+                <u>Space science</u> <img id="linkimg" src="link-26.png" /><br />
+              </li>
+            </div>
+          </a>
+
+          <a href="reading.html">
+            <div class="rightElements" id="profile-entity">
+              <li>
+                <u>Reading</u> <img id="linkimg" src="link-26.png" /><br />
+              </li>
+            </div>
+          </a>
+
+          <a href="web.html">
+            <div class="rightElements" id="profile-entity">
+              <li>
+                <u>Web designing</u> <img id="linkimg" src="link-26.png" /><br />
+              </li>
+            </div>
+          </a>
+
+          <a href="https://stackoverflow.com/users/2306662/nikpod">
+            <div class="rightElements" id="profile-entity">
+              <li>
+                <u>StackOverflow</u> - Tensorflow, Python <img id="linkimg" src="link-26.png" /><br />
+              </li>
+            </div>
+          </a>
+
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>
