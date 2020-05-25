@@ -11,9 +11,28 @@
   animation-name: slideOutRead;
   animation-duration: 2s;
   max-width:18%;
-  font-size: 48px;
+  font-size: 3vw;
+  white-space: nowrap;
 }
 
 #mainSys {
   padding: 10px;
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:1250px) {
+
+  @keyframes slideOutRead {
+    0% {
+      max-width:0vw;
+    }
+    100% {
+      max-width:30vw;
+    }
+  }
+
+  #animatedReadTitle {
+    font-size: 5vw;
+    max-width: 30vw;
+  }
 }

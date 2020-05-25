@@ -9,7 +9,6 @@ body {
   display: inline-block;
   vertical-align: middle;
 
-  height: 100%;
 }
 
 .mainElements {
@@ -38,25 +37,25 @@ body {
   background-position: 0px 0px 0px 0px;
   padding: 0px 2px;
   margin: 0px 10px;
+  height: 6vh;
 }
 
 #name {
-  font-size: 48px;
+  font-size: 3vw;
 }
 
 img#linkedin {
   vertical-align: middle;
-  height: 35px;
+  height: 2.5vw;
 }
 
 
 #break2.headerElements {
-  width: 5px;
+  width: 1vw;
 }
 
 #headerSys {
   width: 100%;
-  height: 57px;
   text-align: center;
 }
 
@@ -91,7 +90,6 @@ div.textAbout{
 a {
   color: #262626;
   text-decoration: none;
-  background-color: #f00;
 }
 
 #linkimg {
@@ -152,18 +150,19 @@ span.highlighter {
     max-width:0%;
   }
   100% {
-    max-width:10%;
+    max-width:10vw;
   }
 }
 #animatedTitle {
   overflow: hidden;
   animation-name: slideOut;
   animation-duration: 2s;
-  max-width:10%;
-  font-size: 48px;
+  max-width:10vw;
+  font-size: 3vw;
+  white-space: nowrap;
 }
 #animatedName {
-  font-size: 48px;
+  font-size: 3vw;
 }
 
 
@@ -175,5 +174,17 @@ span.highlighter {
 
   #break.mainElements {
     height: 4%;
+  }
+  
+  #animatedName {
+    font-size:5vw;
+  }
+
+  #animatedTitle {
+    font-size: 5vw;
+  }
+
+  img#linkedin {
+    height: 6vw;
   }
 }
