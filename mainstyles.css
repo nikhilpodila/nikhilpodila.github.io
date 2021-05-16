@@ -122,6 +122,14 @@ ul.cite {
   padding: 0px 0px 0px 25px;
 }
 
+#profile-entity.middleElements li{
+	color: #888;
+}
+
+#profile-entity.middleElements:hover li {
+  color: #262626;
+}
+
 #profile-entity:hover {
   background-image: linear-gradient(to right, #fff 0%, #e7e7e7 1% 2%, #fff 25%);
 }
@@ -164,6 +172,7 @@ span.highlighter {
 #animatedName {
   font-size: 3vw;
 }
+
 
 
 /* Use a media query to add a break point at 800px: */
