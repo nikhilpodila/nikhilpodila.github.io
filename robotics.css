@@ -1,0 +1,214 @@
+body {
+  background-color: #fff;
+  font-family: Cambria;
+  margin: 5px 0px;
+  color: rgb(38,38,38)
+}
+
+#mainSys {
+  margin: 15px;
+}
+
+.headerElements {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.mainElements {
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+  vertical-align: top;
+}
+
+
+#break.mainElements {
+  width:2%;
+  padding:0px;
+  background-color: transparent;
+}
+
+#heading1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#break.headerElements {
+  width: 3px;
+  background-image: linear-gradient(to right, #fff, #ddd, #bbb, #333, #bbb, #ddd, #fff);
+  background-position: 0px 0px 0px 0px;
+  padding: 0px 2px;
+  margin: 0px 10px;
+  height: 6vh;
+}
+
+#name {
+  font-size: 3vw;
+}
+
+img#linkedin {
+  vertical-align: middle;
+  height: 2.5vw;
+}
+
+
+#break2.headerElements {
+  width: 1vw;
+}
+
+#headerSys {
+  width: 100%;
+  text-align: center;
+}
+
+#horiz {
+  margin-top: 10px;
+  width: 100%;
+  height: 10px;
+  background-image: linear-gradient(#aaa, #eee, #fff);
+}
+
+div.textAbout{
+  float: none;
+  text-align: left;
+  max-width: 90%;
+}
+
+#imgAbout {
+  float: left;
+  height: 100px;
+  border: 4px solid #262626;
+  margin-right: 10px;
+}
+
+#break.leftElements {
+  width: 100%;
+  clear: both;
+  height: 5px;
+  background-color: none;
+  margin-top: 5px;
+}
+
+a {
+  color: #262626;
+  text-decoration: none;
+}
+
+#linkimg {
+  opacity: 0;
+  height: 14px;
+  transition: opacity 0.3s;
+  margin-left:2px;
+}
+
+/*a:hover #linkimg {
+  display: inline-block;
+  height: 14px;
+}*/
+
+.pageNav {
+	font-size: 13px;
+	font-weight: bold;
+
+}
+
+#justLink {
+	text-decoration: underline;
+	color: blue;
+}
+
+#profile-entity {
+  transition: 0.3s;
+  margin: 0px 0px;
+  padding: 3px;
+}
+
+ul {
+  list-style-position: inside;
+  margin: 0px;
+  list-style-type: square;
+  padding: 0px 0px 0px 10px;
+}
+
+ul.cite {
+  list-style-position: outside;
+  padding: 0px 0px 0px 25px;
+}
+
+#profile-entity.middleElements li{
+	color: #888;
+}
+
+#profile-entity.middleElements:hover li {
+  color: #262626;
+}
+
+#profile-entity:hover {
+  background-image: linear-gradient(to right, #fff 0%, #e7e7e7 1% 2%, #fff 25%);
+}
+
+#profile-entity:hover #linkimg {
+  opacity: 1;
+}
+
+#break.middleElements {
+  height: 10px;
+  margin: 0px 0px;
+}
+
+#profile-entity.rightCiteElements {
+  font-size: 16px;
+  color: #262626;
+  text-decoration: underline;
+}
+
+span.highlighter {
+  white-space: nowrap;
+}
+
+@keyframes slideOut {
+  0% {
+    max-width:0%;
+  }
+  100% {
+    max-width:14vw;
+  }
+}
+#animatedTitle {
+  overflow: hidden;
+  animation-name: slideOut;
+  animation-duration: 2s;
+  max-width:14vw;
+  font-size: 3vw;
+  white-space: nowrap;
+}
+#animatedName {
+  font-size: 3vw;
+}
+
+
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:1250px) {
+  .mainElements {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  #break.mainElements {
+    height: 4%;
+  }
+  
+  #animatedName {
+    font-size:5vw;
+  }
+
+  #animatedTitle {
+    font-size: 5vw;
+  }
+
+  img#linkedin {
+    height: 6vw;
+  }
+}

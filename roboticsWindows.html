@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Nikhil Podila</title>
+    <link rel="stylesheet" type="text/css" href = "robotics.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <!--script>
+  $(document).ready(function(){
+    $("profile-entity").click()
+  });
+</script--->
+	<style>
+	#animatedTitle {
+	  overflow: hidden;
+	  animation-name: none;
+	  animation-duration: 2s;
+	  width:33vw;
+	  max-width:33vw;
+	  font-size: 3vw;
+	  white-space: nowrap;
+	}	  
+	</style>
+
+  </head>
+  <body>
+    <div id="headerSys">
+      <div id="animatedName" class="headerElements"></div>
+      <div id="animatedTitle" class="headerElements">Robotics on MS Windows</div>
+      <div id="break" class = "headerElements"></div>
+      <a href="https://www.linkedin.com/in/nikhil-podila/"><img src="lin.png" id="linkedin" class="headerElements"/></a>
+      <div id="break2" class="headerElements"></div>
+      <a href="https://github.com/nikhilpodila"><img src="github.png" id="linkedin" class="headerElements"/></a>
+    </div>
+    <div id="horiz"></div>
+
+    <div id="mainSys">
+	<div class="pageNav">
+		<a id="justLink" href="robotics.html">Robotics Home</a>
+		> Robotics on MS Windows		
+		<br><br>
+	</div>
+    <div id="heading1" class="middleElements">Introduction</div>
+	<p>
+		Although Microsoft Windows is one of the major OS in the market, the Robotics community is primarily Linux oriented. ROS runs on Linux and communication with real robots is much more easier, efficient and sometimes just viable only in Linux. However, some have their own reasons for using Windows. Windows is more user friendly, one does not need to type code or debug compilations in most cases and reaches a wider audience. Working on Robotics with Windows primarily appeals to amateur or young Robotics enthusiasts, experts in other fields applying their solutions to Robotics and merely those who want to explore the possibilities and limitations of the Windows OS when used for Robotics applications.
+	</p>
+	<p>
+		Python, MATLAB and C++ are the major languages used in this field. While Python is used extensively in other domains, its features as a high level language do not make it ideal for multitasking and real-time communication with robots. For those who want to start off Robotics, it would be the most likely prerequisite that they already have. This, combined with large libraries in areas like Machine Learning, Computer Vision and Big Data make it ideal to implement some aspects of Robotics such as Motion Planning, Perception and Sensor data collection. On the other hand, MATLAB is an engineer's language. It offers many resources for Robotics using the toolkit that make it ideal for both academic as well as commercial usage. Its foundation in C++ allows for real-time communication with physical robots. Although MATLAB offers a large array of libraries, its proprietary model limits implementation of state-of-the-art methods as opposed to the Open source methods in other languages with large active developer community. Third, C++ offers real-time communication and a large open source community - a combination of Python and MATLAB described above. However, the low level language might make debugging and implementation a slow process for beginners. Also, the presence of ROS on C++ (albeit on Linux) eliminates the need to develop another major library just for Robotics on C++ with MS Windows. 
+	</p>
+	
+	<p>
+		The details above present a strong case for my inspiration to make Robot programming more accessible in MS Windows, even if it is on a high level. In these set of resources, I aim to gather useful code that could aid myself and those who are starting out in Robotics to program robots easily on this OS. Specifically, I start off by concentrating on Robot simulations on Python, but hope to expand further soon. 
+	</p>
+	
+    <div id="heading1" class="middleElements">Collection of resources</div>
+    <ul>
+
+      <a href="https://github.com/nikhilpodila/pysdf/tree/master#usage-with-python-without-ros">
+        <div class="rightElements" id="profile-entity">
+          <li>
+            <u>Converting SDF files to URDF files</u> <img id="linkimg" src="link-26.png" /><br>
+			SDF files are robot description files generated and used by the Gazebo simulation framework of ROS. However, most Python libraries such as PyBullet and Pinocchio use the standard URDF file format, which is described by ROS itself. This code provides a quick method to convert SDF files to URDF files.
+          </li>
+        </div>
+      </a>
+	  
+    </ul>
+    <div id="break" class="leftElements"></div>
+    </div>
+  </body>
+</html>
