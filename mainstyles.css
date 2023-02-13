@@ -88,7 +88,7 @@ div.textAbout{
 }
 
 a {
-  color: #262626;
+  color: rgb(0, 102, 186);
   text-decoration: none;
 }
 
@@ -97,6 +97,10 @@ a {
   height: 14px;
   transition: opacity 0.3s;
   margin-left:2px;
+}
+
+.link-title {
+  text-decoration: underline;
 }
 
 /*a:hover #linkimg {
@@ -117,21 +121,44 @@ ul {
   padding: 0px 0px 0px 10px;
 }
 
-ul.cite {
+/* ul#cite {
   list-style-position: outside;
   padding: 0px 0px 0px 25px;
+} */
+
+ul.links {
+  text-decoration: underline;
+  color: rgb(0, 102, 186);
+  /* list-style: none; */
+  /* -image: url("link-26.png"); */
+}
+
+ul.links li:hover {
+  list-style-type: none;
+}
+ul.links li:hover::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url("link-26.png");
+  background-size: 14px 14px;
+  margin-right: 4px;
 }
 
 #profile-entity.middleElements li{
 	color: #888;
+  text-decoration: none;
 }
 
 #profile-entity.middleElements:hover li {
   color: #262626;
+  /* text-decoration: underline; */
 }
 
 #profile-entity:hover {
-  background-image: linear-gradient(to right, #fff 0%, #e7e7e7 1% 2%, #fff 25%);
+  /* background-image: linear-gradient(to right, #fff 0%, #e7e7e7 1% 2%, #fff 25%); */
+  text-decoration: none;
 }
 
 #profile-entity:hover #linkimg {
@@ -145,13 +172,15 @@ ul.cite {
 
 #profile-entity.rightCiteElements {
   font-size: 16px;
-  color: #262626;
-  text-decoration: underline;
+  /* color: #262626; */
+  color: rgb(0, 102, 186);
+  text-decoration: none;
 }
 
-span.highlighter {
-  white-space: nowrap;
+/* #profile-entity.rightCiteElements:hover {
+  text-decoration: underline;
 }
+ */
 
 @keyframes slideOut {
   0% {
