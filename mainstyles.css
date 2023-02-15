@@ -14,7 +14,7 @@ body {
 .mainElements {
   display: inline-block;
   width: 30%;
-  padding: 10px;
+  padding: 0px 10px;
   vertical-align: top;
 }
 
